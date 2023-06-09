@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+}
+.container{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  grid-template-columns: repeat(4,100px);
+  grid-template-rows: minmax(120px,auto) repeat(5,70px);
+}
+.output{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 5px 5px;
+}
+.spanTwo{
+    grid-column: span 2;
+}
+.previous-output{
+    font-size: 20px;
+}
+.current-output{
+    font-size: 45px;
+}
